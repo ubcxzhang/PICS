@@ -1,5 +1,5 @@
 # PICS
-Probabilistic inference of ChIP-Seq using an empirical Bayes mixture model approach.
+Probabilistic inference of ChIP-Seq using an empirical Bayes mixture model approach. An R package developed for the ananlysis of the Next Generation Sequencing (NGS) data. 
 
 This is R implementation of statitical method proposed in my paper
 
