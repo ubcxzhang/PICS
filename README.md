@@ -10,10 +10,13 @@ Please cite this paper, if you used this R package in your research. Thanks!
 To install this R package, please use the following R code:
 
 library(devtools)
+
 install_github("ubcxzhang/MTPS")
 
 Alternatively, this package can be installed from Bioconductor using  the following R code:
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
+
     install.packages("BiocManager")
+    
 BiocManager::install("PICS")
