@@ -1,0 +1,35 @@
+#
+# NAMESPACE PICS
+#
+useDynLib(PICS)
+
+import(methods)
+importFrom(graphics, abline, axis, grid, layout, lines, mtext, par,
+           plot, points, segments, stripchart, symbols, title)
+importFrom(grDevices, grey)
+importFrom(stats, dt)
+importFrom(stats4, plot)
+importFrom(stats4, summary)
+#import(BiocGenerics)
+importFrom(BiocGenerics, density)
+
+import(IRanges)
+import(S4Vectors)
+
+importFrom(Rsamtools, ScanBamParam, scanBamFlag)
+
+importClassesFrom(GenomicRanges, GRanges)
+importMethodsFrom(GenomicRanges, strand, seqnames)
+importFrom(GenomicRanges, GRanges)
+
+importFrom(GenomicAlignments, readGAlignments)
+
+#importFrom(BSgenome, GenomeData)
+#importClassesFrom(BSgenome, GenomeData)
+
+
+exportClasses(segReads, segReadsList, segReadsPE, segReadsListPE, pics, picsError, picsList)
+exportMethods(coerce, show, summary, plot, wigDensity, chromosome, score, se, seF, seR,
+	sigmaSqF, sigmaSqR, mu, delta, w, code, length, K,"[","[[", map, minRange, maxRange, scoreForward, scoreReverse)
+export("segReadsList", "segReadsListPE", "segReadsPE", "segReadsGeneric", "segReads", "segmentPICS", "summarySeg", "makeRangedDataOutput", "PICS", "picsFDR", "newPicsError", "setParaEM", "setParaPrior", "candidate.region","segChrRead", "bam2gr")
+

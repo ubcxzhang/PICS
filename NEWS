@@ -1,0 +1,24 @@
+CHANGES in VERSION 1.2
+----------------------
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o When plotting the FDR (i.e. plot(pics,picsC)) the number of enriched regions is also displayed as a function of the cutoff score at the top.
+
+NEW FEATURES
+
+    o Support for the multicore package. The number of cores will automatically be detected. The multicore package
+    needs to be loaded for that.
+    
+    o Snowfall is still supported and if sfCluster() is called, snowfall will be used over multicore. So if you want to use snowfall make 
+    sure not to load multicore
+    
+
+BUG FIXES
+
+    o Fixed a bug when calculating the scores. The scores are now normalized for the 
+    number of reads in the control. This could have affected the FDR calculation.
+
+    o Added better documentation for the plotting methods. Typing ?plot or ?FDR should get you better documentation.
+
+(start date: 1 May, 2010)

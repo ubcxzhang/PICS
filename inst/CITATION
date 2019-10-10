@@ -1,0 +1,26 @@
+citHeader("To cite the R package 'PICS' in your publication please use:")
+
+citEntry(entry  = "article",
+         title  = "PICS: Probabilistic Inference for ChIP-seq",
+         author = personList(
+                 person(given="Xuekui", family="Zhang"),
+                 person(given="Gordon", family="Robertson"),
+                 person(given="Martin", family="Krzywinski"),
+                 person(given="Kaida", family="Ning"),
+                 person(given="Arnaud", family="Droit"),
+                 person(given="Steven", family="Jones"),
+                 person(given="Raphael", family="Gottardo")
+			),
+	    journal = "Biometrics",
+	    year = "2010",
+	    volume  = "66",
+	    number =  "",
+
+		note = paste("R package version ", R.Version()$major, ".", R.Version()$minor, sep = ""),
+		textVersion = paste("X. Zhang, G. Robertson, M. Krzywinski, K. Ning, A. Droit, S. Jones, and R. Gottardo. (2010) PICS: Probabilistic Inference for ChIP-seq, Biometrics, 66:151-163. DOI 0.1111/j.1541-0420.2010.01441.x")
+	)
+
+citFooter("This free open-source software implements academic
+research by the authors and co-workers. If you use it,
+please support the project by citing the appropriate
+journal articles.\n")
