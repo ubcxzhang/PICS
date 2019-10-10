@@ -12,7 +12,9 @@ To install this R package, please use the following R code:
     library(devtools)
     install_github("ubcxzhang/PICS")
 
-Alternatively, this package can be installed from Bioconductor using  the following R code:
+This is a clone of my Bioconductor package PICS version 2.28.0 https://www.bioconductor.org/packages/release/bioc/html/PING.html
+
+So, this package can be installed from Bioconductor using  the following R code:
 
     if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
